@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Suite">
+    <parameter name="Login-value" value="user1"></parameter>
+    <parameter name="paw-value" value="123123123"></parameter>
+    <test name="Groups Test">
+        <classes>
+            <class name="ParamTest"></class>
+        </classes>
+    </test>
+</suite>
