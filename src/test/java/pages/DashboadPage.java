@@ -36,5 +36,5 @@ public class DashboardPage extends BasePage {
 }
 
 public class DashboadPage {
-    ackage pages;
+    package pages;
 }
