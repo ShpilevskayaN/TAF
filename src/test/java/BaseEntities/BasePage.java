@@ -3,6 +3,7 @@ package baseEntities;
 import configuration.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
     protected WebDriver driver;
@@ -11,10 +12,13 @@ public abstract class BasePage {
         this.driver = driver;
     }
 
+
+    PageFactory.unitElements(driver, this);
+
     protected abstract By getPageIdentifier();
 
     public boolean isPageOpened() {
-        return driver.findElement(getPageIdentifier()).isDisplayed();
+        return getPageIdentifier().isDisplayed();
     }
 
     public void openPageByUrl(String pagePath) {

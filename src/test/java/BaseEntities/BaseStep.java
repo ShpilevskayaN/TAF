@@ -8,7 +8,7 @@ import pages.ProjectsPage;
 public class BaseStep {
     protected WebDriver driver;
     protected LoginPage loginPage;
-    protected DashboardPage dashboardPage;
+    protected DashboardPage  dashboardPage;
     protected ProjectsPage projectsPage;
 
 

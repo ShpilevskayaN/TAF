@@ -18,7 +18,7 @@ public class ActionsTest extends BaseTest {
         driver.get("http://the-internet.herokuapp.com/hovers");
 
         Actions actions = new Actions(driver);
-        WaitsService wait = new WaitsService(driver, Duration.ofSeconds(10));
+        WaitsService wait = new WaitsService (driver, Duration.ofSeconds(10));
 
         List<WebElement> targetElements = wait.waitForAllVisibleElementsLocatedBy(By.cssSelector(".figure"));
         actions
