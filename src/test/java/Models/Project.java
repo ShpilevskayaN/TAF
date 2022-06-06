@@ -9,15 +9,7 @@ public class Project implements Serializable {
     private boolean show_announcement;
     private int type;
 
-    @Override
-    public String toString() {
-        return "Project{" +
-                "name='" + name + '\'' +
-                ", announcement='" + announcement + '\'' +
-                ", show_announcement=" + show_announcement +
-                ", type=" + type +
-                '}';
-    }
+
 
     public Project(String name, String announcement, boolean show_announcement, int type) {
         this.name = name;
@@ -27,6 +19,15 @@ public class Project implements Serializable {
 
     }
 
+    @Override
+    public String toString() {
+        return "Project{" +
+                "name='" + name + '\'' +
+                ", announcement='" + announcement + '\'' +
+                ", show_announcement=" + show_announcement +
+                ", type=" + type +
+                '}';
+    }
     public boolean getName() {
         return name;
     }

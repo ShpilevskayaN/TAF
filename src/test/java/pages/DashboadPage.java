@@ -4,6 +4,7 @@ import baseEntities.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import pages.ProjectsOverviewPage;
 import pages.TopMenuPage;
 
 public class DashboardPage extends BasePage {
@@ -34,7 +35,9 @@ public class DashboardPage extends BasePage {
         return driver.findElement(headerTitleLabelLocator);
     }
 }
-
-public class DashboadPage {
-    package pages;
+    // Блок комплексных методов
+    public ProjectsOverviewPage openProject(String projectName) {
+        //ToDo: implement actions
+        return new ProjectsOverviewPage(driver);
+    }
 }
